@@ -5,7 +5,7 @@ function maxProductSubarray(elements) {
     let n=elements.length;
     for(let i=0;i<n;i++){
       product=product*elements[i];
-      console.log(product)
+      //console.log(product)
       if(product!=0){
         maxProduct=Math.max(maxProduct,product);
       }else{
