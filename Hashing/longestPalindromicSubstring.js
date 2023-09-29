@@ -9,6 +9,9 @@ function expandfromCenter(str, left, right) {
 function longestPalindromicSubstring(s) {
     // TODO: Implement your code here
     let longest = "";
+    if (s.length == 1) {
+        return s;
+    }
     for (let i = 0; i < s.length - 1; ++i) { 
         let oddPalindrome = expandfromCenter(s,i,i);
         let evenPalindrome = expandfromCenter(s, i - 1, i);
@@ -21,4 +24,4 @@ function longestPalindromicSubstring(s) {
     }
     return longest;
 }
-console.log(longestPalindromicSubstring("abbaaa"));
+console.log(longestPalindromicSubstring("a"));
